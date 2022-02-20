@@ -25,65 +25,103 @@
         float: left;
       }
 
-      /* The container <div> - needed to position the dropdown content */
-      .dropdown {
-        text-align: right;
+      /* Navbar container */
+      .navbar {
+        overflow: hidden;
+        background-color: #b5c6b4;
+        font-family: Arial;
+        padding: 20px;
+      }
+
+      /* Links inside the navbar */
+      .navbar a {
         float: right;
-        margin-top: 10px;
-        margin-right: 100px;
+        font-size: 20px;
+        color: #4198a8;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
       }
 
-      .dropbtn {
-        background-image: "https://via.placeholder.com/50x50";
+      /* The dropdown container */
+      .dropdown {
+        float: right;
+        overflow: hidden;
       }
 
-      /* Dropdown Content (Hidden by Default) */
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 20px; 
+        border: none;
+        outline: none;
+        color: #4198a8;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+
+      /* Add a red background color to navbar links on hover */
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+
+      /* Dropdown content (hidden by default) */
       .dropdown-content {
         display: none;
         position: absolute;
-        float: right;
-        background-color: #f1f1f1;
-        min-width: 50px;
+        background-color: #f9f9f9;
+        min-width: 60px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
       }
 
       /* Links inside the dropdown */
       .dropdown-content a {
+        float: none;
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        text-align: left;
       }
 
-      /* Change color of dropdown links on hover */
-      .dropdown-content a:hover {background-color: #ddd;}
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
 
       /* Show the dropdown menu on hover */
-      .dropdown:hover .dropdown-content {display: block;}
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
-      /* Change the background color of the dropdown button when the dropdown content is shown */
-      .dropdown:hover .dropbtn {background-color: #3e8e41;}
-      
+      .clicknic_logo {
+        position: relative;
+        bottom: 90px;
+        left: 20px;
+      }
+
     </style>
   </head>
   <body>
-    <div class="band-header">
-      <header class="site-header">
-        <img src="https://via.placeholder.com/50x50">
-        <div class="horizontal-wrapper">
-          <div class="dropdown", style = "float: right;">
-            <button class="dropbtn"></button>
-            <div class="dropdown-content", style = "float: right;">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-          <h3>Login |</h3><h3> Sign Up</h3>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-caret-down"><img src = "static/Screen Shot 2022-02-19 at 11.01.59 PM.png",
+            style = "height: 30px; width: 30px;"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
         </div>
-      </header>
+      </div> 
+      <a href="#home">Sign Up</a>
+      <a href="#news">Log In</a>
     </div>
+    <div class = "clicknic_logo"><img src = "static/clicknic_logo.png",
+       style = "height: 200px; width: 200px;"></div>
     {% block content %}
     <!--Do not type anything here. Make sure not to delete the stuff in curly brackets. -->
     {% endblock %}

@@ -3,8 +3,109 @@
 {% block content %}
 <head>
     <style>
+        @font-face { font-family: 'Shrikhand'; src: url('static/Shrikhand-Regular.ttf'); }
+        h1 {
+            position: relative;
+            bottom: 220px;
+            font-family: 'Shrikhand';
+            font-size: 100px;
+            text-align: center;
+            color: #684c36;
+
+        }
+        @font-face { font-family: 'Roboto'; src: url('static/Roboto-Regular.ttf'); }
+        h2 {
+            position: relative;
+            bottom: 300px;
+            font-family: 'Roboto';
+            font-size: 25px;
+            text-align: center;
+            color: #684c36;
+
+        }
+        body {
+            background-color: #f7ede2
+        }
+        .icon-row {
+            position: relative;
+            bottom: 300px;
+        }
+        .icon1 {
+            display: inline-block;
+            position: relative;
+            left: 450px;
+        }
+        .icon2 {
+            display: inline-block;
+            position: relative;
+        }
+        .icon3 {
+            display: inline-block;
+            position: relative;
+            left: 150px;
+        }
+        @font-face { font-family: 'Quicksand'; src: url('static/Quicksand-VariableFont_wght.ttf'); }
+        .p1 {
+            font-family: 'Quicksand';
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+            font-size: 20px;
+            color: #684c36;
+        }
+        .p2 {
+            font-family: 'Quicksand';
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+            font-size: 20px;
+            color: #684c36;
+        }
+        .p3 {
+            font-family: 'Quicksand';
+            position: relative;
+            left: 60px;
+            bottom: 20px;
+            font-size: 20px;
+            color: #684c36;
+        }
     </style>
 </head>
-<!--Put your body code here. Make sure not to delete anything in brackets {}.-->
-Filler text for index.html. Delete me.
+<body>
+    <h1>CLICKNIC</h1>
+    <hr style = "position: relative; bottom: 300px; width: 800px; border: 1px solid #684c36;">
+    <h2>CLICK LIKE TWO PEAS IN A POD</h2>
+    <div class = "icon-row">
+        <div class = "icon1">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/wloilxuq.json",
+                trigger="loop",
+                colors="primary:#ffffff; secondary:#fae6d1;",
+                style="width:250px; height:250px;">
+            </lord-icon>
+            <div class = "p1">Create your profile</div>
+        </div>
+        <div class = "icon2">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/zpxybbhl.json"
+                trigger="loop"
+                colors="primary:#ffffff; secondary:#faefd1;"
+                style="width:250px; height:250px">
+            </lord-icon>
+            <div class = "p2">Meet your match</div>
+        </div>
+        <div class = "icon3">
+            <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/uvextprq.json"
+                trigger="loop"
+                colors="primary:#ffffff;"
+                style="width:250px; height:250px">
+            </lord-icon>
+            <div class = "p3">Schedule a meeting</div>
+        </div>
+    </div>
+</body>
 {% endblock %}
