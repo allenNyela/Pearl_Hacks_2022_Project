@@ -126,7 +126,7 @@ Don't forget to give the project a star! Thanks again!
 
 Abby Nacional - [@abigailnacional](https://github.com/abigailnacional) - abigailnacional@gmail.com
 
-Nyela Allen - [@allenNyela](https://github.com/allenNyela) - 8389414@gmail.com
+Nyela Allen - [@allenNyela](https://github.com/allenNyela) - nmallen3@ncsu.edu
 
 Tiffany - tiffanytruong1017@gmail.com
 
