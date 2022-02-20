@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, flash
 import os
 from flask_sqlalchemy import SQLAlchemy, request
 import sqlalchemy.orm
@@ -50,13 +50,15 @@ def index():
 def register_user():
     form = request.form
     user = Users(
-        email=form['email']
+        email=form['email'], 
         phone_number=form['phone-number']
     )
     user.set_password(form['password'])
     db.session.add(user)
     db.session.commit()
-    return "Wohoo you're registered! Enjoy your Clicknic Experience!"
+    flash("Wohoo you're registered! Enjoy your Clicknic Experience!")
+    render_template('register.html')
+    return True
 
 @app.route('/login-user', methods=['POST'])
 def login_user():
