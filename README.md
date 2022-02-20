@@ -144,4 +144,3 @@ Thank you to the directors, mentors, and sponsors of PearlHacks 2022!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
