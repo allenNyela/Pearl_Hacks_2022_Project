@@ -2,10 +2,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<!--<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>-->
+<div align="center">
+  <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project">
+    <img src="static/clicknic_logo.png" alt="Logo" width="300" height="300">
+  </a>
 
   <h3 align="center">Clicknic: Two Peas in a Pod</h3>
 
@@ -15,14 +15,13 @@
     <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project">View Demo (fix link)</a>
+    <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project">View Demo (change link)</a>
     ·
     <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project/issues">Report Bug</a>
     ·
     <a href="https://github.com/allenNyela/Pearl_Hacks_2022_Project/issues">Request Feature</a>
   </p>
 </div>
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -48,13 +47,10 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Clicknic: Two Peas in a Pod is a web app designed in order to bring people together through virtual picnicking. Users can create their profiles, find and chat with other picnickers, and easily set up a virtual picnic appointment. Picnics are held over a phone call. Users can send pictures of their food and picknicking setups through the web app.
+Clicknic: Two Peas in a Pod is a web app designed in order to bring people together through virtual picnicking. Users can create profiles, find and chat with other picnickers, and easily set up a virtual picnic appointment. Picnics are held over a phone call. Users can send pictures of their food and picknicking setups through the web app.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,15 +90,16 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    python3 app.py
    ```
+5. Type "localhost:5000" into your browser's URL bar and press enter.
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+View our demo video here: link
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -129,16 +126,15 @@ Don't forget to give the project a star! Thanks again!
 
 Abby Nacional - [@abigailnacional](https://github.com/abigailnacional) - abigailnacional@gmail.com
 
-Nyela
+Nyela Allen - [@allenNyela](https://github.com/allenNyela) - 8389414@gmail.com
 
-Tiffany
+Tiffany - tiffanytruong1017@gmail.com
 
-Olivia
+Olivia Carson - [@ocarson10](https://github.com/ocarson10) - ocarson123101@gmail.com
 
 Project Link: [https://github.com/allenNyela/Pearl_Hacks_2022_Project](https://github.com/allenNyela/Pearl_Hacks_2022_Project)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -148,18 +144,3 @@ Thank you to the directors, mentors, and sponsors of PearlHacks 2022!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
