@@ -5,12 +5,14 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/patient.css') }}">
 {% endblock %}
 {% block content %}
-    <!--<a href="{{ url_for('logout_doctor') }}">Logout</a>-->
-    <form name="user-registration-form" action="{{ url_for('register_user') }}" method='post'>
+    <!--<a href="{{ url_for('register_user') }}">Login</a>-->
+    <form action='/register-user' method='post'>
       <label>Email Address</label>
       <input name ="email-address" type="email" required>
       <label>Phone Number</label>
       <input name ="phone-number" type="text" required>
+      <label>Password</label>
+      <input name ="password" type="password" required>
       <input type="submit" />
     </div>
 {% endblock %}
