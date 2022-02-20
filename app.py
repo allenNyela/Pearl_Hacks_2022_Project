@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import os
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy, request
 import sqlalchemy.orm
 #from cockroachdb.sqlalchemy import run_transaction
 
@@ -45,6 +45,27 @@ SECRET_KEY = os.urandom(32)
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/register-user', methods=['POST'])
+def register_user():
+    form = request.form
+    user = Users(
+        email=form['email']
+        phone_number=form['phone-number']
+    )
+    user.set_password(form['password'])
+    db.session.add(user)
+    db.session.commit()
+    return "Wohoo you're registered! Enjoy your Clicknic Experience!"
+
+@app.route('/login-user', methods=['POST'])
+def login_user():
+    form = request.form
+    user = Users.query.filter_by(email=form['email'])
+    if user.check_password(form['password']):
+        return 'Welcome back to the Clicknic Experience!'
+    else:
+        return 'Error'
 
 if __name__ == '__main__':
 	app.run(debug=True)
